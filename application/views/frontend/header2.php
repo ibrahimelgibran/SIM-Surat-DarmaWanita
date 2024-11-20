@@ -41,7 +41,7 @@
 					</li>
 					<li class="nav-item"><a class="nav-link <?php if ($title == 'Pengajuan Surat Online') : ?><?= 'active';?><?php endif;?>" href="<?= base_url('suratonline')?>">Pengajuan Surat Noluten</a></li>
 					<li class="nav-item"><a class="nav-link <?php if ($title == 'Tracking') : ?><?= 'active';?><?php endif;?>" href="<?= base_url('tracking')?>">Track Surat</a></li>
-					<li class="nav-item"><a class="nav-link <?php if ($title == 'Tracking') : ?><?= 'active';?><?php endif;?>" href="https://ieglink.my.id/bukutamu">Buku Tamu</a></li>
+					<li class="nav-item"><a class="nav-link <?php if ($title == 'Buku Tamu') : ?><?= 'active';?><?php endif;?>" href="https://ieglink.my.id/bukutamu">Buku Tamu</a></li>
 					<li class="nav-item"><a class="nav-link" target="_blank"
 							href="<?= base_url('auth/login')?>">Login</a></li>
 				</ul>
