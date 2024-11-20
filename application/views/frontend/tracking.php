@@ -3,10 +3,11 @@
 		<?php if ($this->session->flashdata('message') == TRUE) : ?>
 		<?= $this->session->flashdata('message'); ?>
 		<?php endif; ?>
-		<div class="text-center">
-			<h2 class="section-heading text-uppercase">Tracking Surat Notulen Online</h2>
-			<h3 class="section-subheading text-muted">Masukkan ID Surat untuk <b>Track</b>:</h3>
-		</div>
+		<div class="text-center mb-4">
+      <h2 class="section-heading text-uppercase fw-bold">Tracking Surat Notulen Online</h2>
+      <p class="section-subheading text-muted">Masukkan ID Surat untuk <b>Track</b>:</p>
+    </div>
+
 		<div class="text-justify pl-5 pr-5">
 			<div class="row justify-content-center">
 				<div class="col-12 col-md-10 col-lg-8">
@@ -32,10 +33,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="text-center">
-		<br><br><br>
-			<h3 class="section-subheading text-muted">Id Surat Noluten Akan Dilampirkan oleh Admin Melalui No.HP</h3>
-		</div>
+	<div class="text-center mt-5">
+      <h3 class="section-subheading text-muted">
+        ID Surat Notulen akan dilampirkan oleh admin melalui <b>No. HP</b>.
+      </h3>
+    </div>
 </section>
 
 <section class="page-section">

@@ -1,22 +1,35 @@
 
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left" style="color:white">Copyright © Darma Wanita <?= date('Y')?>
-					</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="#!">Contact</a>
-                        <a href="#!">Other</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+      <!-- Footer -->
+<footer class="footer bg-dark text-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Copyright -->
+      <div class="col-lg-4 text-center text-lg-left mb-3 mb-lg-0">
+        <p class="mb-0">Copyright © Darma Wanita <?= date('Y') ?></p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="col-lg-4 text-center mb-3 mb-lg-0">
+        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-2" href="#!" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-lg-4 text-center text-lg-right">
+        <a class="text-white text-decoration-none mx-3" href="#!">Contact</a>
+        <a class="text-white text-decoration-none mx-3" href="#!">Other</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
         <!-- Struktur -->
         

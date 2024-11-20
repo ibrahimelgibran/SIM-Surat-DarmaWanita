@@ -173,9 +173,9 @@
                             </li>
                         </ul>
                     </nav> -->
-                    <p class="copyright pull-right">
+                    <!-- <p class="copyright pull-right">
                         Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>. All rights reserved.
-                    </p>
+                    </p> -->
                 </div>
             </footer>
         </div>
