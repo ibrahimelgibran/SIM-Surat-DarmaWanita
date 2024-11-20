@@ -19,7 +19,7 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="<?= base_url();?>assets/jquery-ui-1.12.1/jquery-ui.css">
+	<link rel="stylesheet" href="<?= base_url(); ?>assets/jquery-ui-1.12.1/jquery-ui.css">
 
 </head>
 
@@ -97,6 +97,45 @@
 					</li>
 
 					<li class="
+						<?php if ($title == 'Bendahara') : ?>
+							<?= 'active'; ?>
+						<?php endif; ?>
+						">
+						<a data-toggle="collapse" href="#bendahara">
+							<i class="material-icons">email</i>
+							<p>Bendahara
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="
+                        <?php if ($title == 'Bendahara') : ?>
+                            <?= 'collapse in'; ?>
+                        <?php else : ?>
+                            <?= 'collapse'; ?>
+                        <?php endif; ?>
+                        " id="bendahara">
+							<ul class="nav">
+								<li>
+									<a href="https://ieglink.my.id/bukubank">
+										<i class="material-icons">book</i>
+										<p>Buku Bank</p>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://ieglink.my.id/bukuuyhd">
+										<i class="material-icons">book</i>
+										<p>Buku UYHD</p>
+									</a>
+								</li>
+							</ul>
+
+
+
+							<!-- Dashboard Admin -->
+							<?php if ($this->session->userdata('level') == 'administrator') : ?>
+
+					<li class="
 						<?php if ($title == 'Management Surat') : ?>
 							<?= 'active'; ?>
 						<?php endif; ?>
@@ -115,7 +154,7 @@
                         <?php endif; ?>
                         " id="pagesExamples">
 							<ul class="nav">
-								<!-- <li class="
+								<li class="
                                 <?php if ($sub_title == 'Pengajuan Surat') : ?>
                                     <?= 'active'; ?>
                                 <?php endif; ?>
@@ -124,7 +163,7 @@
 										<span class="sidebar-mini">M</span>
 										<span class="sidebar-normal">Pengajuan Surat</span>
 									</a>
-								</li> -->
+								</li>
 								<li class="
                                 <?php if ($sub_title == 'Surat Masuk') : ?>
                                     <?= 'active'; ?>
@@ -240,40 +279,6 @@
 							<p>Pengajuan Notulen</p>
 						</a>
 					</li>
-         
-				
-					<!-- <li class="
-						<?php if ($title == 'Notulen') : ?>
-							<?= 'active'; ?>
-						<?php endif; ?>
-						">
-						<a data-toggle="collapse" href="#notulenExamples">
-							<i class="material-icons">book</i>
-							<p>Notulen
-								<b class="caret"></b>
-							</p>
-						</a>
-						<div class="
-                        <?php if ($title == 'Notulen') : ?>
-                            <?= 'collapse in'; ?>
-                        <?php else : ?>
-                            <?= 'collapse'; ?>
-                        <?php endif; ?>
-                        " id="notulenExamples">
-							<ul class="nav">
-								<li class="
-                                <?php if ($sub_title == 'Notulen') : ?>
-                                    <?= 'active'; ?>
-                                <?php endif; ?>
-                                ">
-									<a href="<?= base_url() ?>surat/notulen">
-										<span class="sidebar-mini">BN</span>
-										<span class="sidebar-normal">Buku Notulen</span>
-									</a>
-								</li>
-								</ul>
-								</div>
-								</li> -->
 
 					<li class="
 						<?php if ($title == 'Galery') : ?>
@@ -368,52 +373,49 @@
 						</a>
 					</li>
 
-					<?php if ($this->session->userdata('level') == 'administrator') : ?>
-
-
-						<li class="
+					<li class="
                         <?php if ($title == 'Management Pegawai') : ?>
                             <?= 'active'; ?>
                         <?php endif; ?>
                             ">
-							<a href="<?= base_url() ?>pegawai">
-								<i class="material-icons">supervised_user_circle</i>
-								<p>Management Pegawai</p>
-							</a>
-						</li>
+						<a href="<?= base_url() ?>pegawai">
+							<i class="material-icons">supervised_user_circle</i>
+							<p>Management Pegawai</p>
+						</a>
+					</li>
 
-						<li class="
+					<li class="
                         <?php if ($title == 'Management User') : ?>
                             <?= 'active'; ?>
                         <?php endif; ?>
                             ">
-							<a href="<?= base_url() ?>user">
-								<i class="material-icons">people</i>
-								<p>Management User</p>
-							</a>
-						</li>
+						<a href="<?= base_url() ?>user">
+							<i class="material-icons">people</i>
+							<p>Management User</p>
+						</a>
+					</li>
 
-					<?php endif; ?>
+				<?php endif; ?>
 
-					<?php if ($this->session->userdata('id_user') == TRUE) : ?>
+				<?php if ($this->session->userdata('id_user') == TRUE) : ?>
 
-						<li>
-							<a href="<?= base_url() ?>logout">
-								<i class="material-icons">logout</i>
-								<p>Logout</p>
-							</a>
-						</li>
+					<li>
+						<a href="<?= base_url() ?>logout">
+							<i class="material-icons">logout</i>
+							<p>Logout</p>
+						</a>
+					</li>
 
-					<?php else : ?>
+				<?php else : ?>
 
-						<li>
-							<a href="<?= base_url() ?>auth/login">
-								<i class="material-icons">login</i>
-								<p>Login</p>
-							</a>
-						</li>
+					<li>
+						<a href="<?= base_url() ?>auth/login">
+							<i class="material-icons">login</i>
+							<p>Login</p>
+						</a>
+					</li>
 
-					<?php endif; ?>
+				<?php endif; ?>
 
 
 
