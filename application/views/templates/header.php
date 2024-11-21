@@ -130,8 +130,6 @@
 								</li>
 							</ul>
 
-
-
 							<!-- Dashboard Admin -->
 							<?php if ($this->session->userdata('level') == 'administrator') : ?>
 
