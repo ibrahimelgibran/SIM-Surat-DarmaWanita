@@ -3,7 +3,7 @@
  	<div class="container">
  		<div class="masthead-subheading">Selamat Datang!</div>
  		<div class="masthead-heading text-uppercase">DARMA WANITA</div>
- 		<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#profil">Lihat Profil</a>
+ 		<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="border-radius: 50px;" href="#profil">Lihat Profil</a>
  	</div>
  </header>
 

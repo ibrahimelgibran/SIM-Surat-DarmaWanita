@@ -438,6 +438,7 @@ class Surat extends CI_Controller
         $data['options'] = [
             'SPKK' => 'Kartu Keluarga',
             'SPNA' => 'Nikah(N.A)',
+            'LOKER' => 'Iegcode',
             'SKKL' => 'Kelahiran',
             'SKKM' => 'Kematian',
             'SKP' => 'Pindah',
@@ -469,6 +470,7 @@ class Surat extends CI_Controller
         $options = [
             'SPKK' => 'Kartu Keluarga',
             'SPNA' => 'Nikah(N.A)',
+            'LOKER' => 'Iegcode',
             'SKKL' => 'Kelahiran',
             'SKKM' => 'Kematian',
             'SKP' => 'Pindah',

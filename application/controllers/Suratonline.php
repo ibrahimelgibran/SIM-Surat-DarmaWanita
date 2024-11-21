@@ -29,24 +29,24 @@ class Suratonline extends CI_Controller
             'Surat Pengantar:' => [
                 'SPKK' => 'Kartu Keluarga',
                 'SPNA' => 'Nikah(N.A)',
-                'LOKER' => 'IEGCODE',
+                'LOKER' => 'Iegcode',
             ],
-            // 'Surat Keterangan:' => [
-            //     'SKKL' => 'Kelahiran',
-            //     'SKKM' => 'Kematian',
-            //     'SKP' => 'Pindah',
-            //     'SKD' => 'Datang',
-            //     'SKBM' => 'Belum Menikah',
-            //     'SKPH' => 'Penghasilan',
-            //     'SKM' => 'Miskin',
-            //     'SKU' => 'Usaha',
-            //     'SKT' => 'Tanah',
-            //     'SKGG' => 'Ganti Rugi',
-            // ],
-            // 'Rekomendasi Surat:' => [
-            //     'SITU' => 'Izin Tempat Usaha',
-            //     'SIMB' => 'Izin Mendirikan Bangunan',
-            // ],
+            'Surat Keterangan:' => [
+                'SKKL' => 'Kelahiran',
+                'SKKM' => 'Kematian',
+                'SKP' => 'Pindah',
+                'SKD' => 'Datang',
+                'SKBM' => 'Belum Menikah',
+                'SKPH' => 'Penghasilan',
+                'SKM' => 'Miskin',
+                'SKU' => 'Usaha',
+                'SKT' => 'Tanah',
+                'SKGG' => 'Ganti Rugi',
+            ],
+            'Rekomendasi Surat:' => [
+                'SITU' => 'Izin Tempat Usaha',
+                'SIMB' => 'Izin Mendirikan Bangunan',
+            ],
         ];
 
         // $data['sm'] = $this->db->get('surat_masuk')->row_array();

@@ -40,11 +40,11 @@
             <hr>
             <div class="row mt-2 justify-content-end">
             <div class="col-lg-4">
-        <a href="https://ieglink.my.id/notulen" download class="btn btn-warning btn-block">DOWNLOAD TEMPLATE SURAT</a>
+        <a href="https://ieglink.my.id/notulen" download class="btn btn-warning btn-block">DOWNLOAD TEMPLATE LAMPIRAN</a>
     </div>
 </div>
     <div class="col-lg-4">
-        <button type="submit" class="btn btn-primary btn-block">KIRIM PERMOHONAN</button>
+        <button type="submit" class="btn btn-primary btn-block mt-2">KIRIM PERMOHONAN</button>
     </div>
   
 

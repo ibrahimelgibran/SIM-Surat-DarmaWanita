@@ -7,7 +7,7 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<title><?= $title?></title>
-	<link rel="icon" type="image/x-icon" href="<?= base_url()?>assets/img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="<?= base_url()?>assets/img/ieg.png" />
 	<!-- Font Awesome icons (free version)-->
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 	<!-- Google fonts-->
@@ -26,7 +26,7 @@
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-purple fixed-top" id="mainNav">
 		<div class="container">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="<?= base_url()?>assets/img/logo.png"
+			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="<?= base_url()?>assets/img/ieg.png"
 					alt="darmawanita" /></a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
 				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"

@@ -62,6 +62,7 @@
                 const spkk = ['KK Lama (Asli & FC)', 'KTP', 'Surat Pindah dari daerah asal', 'FC Buku Nikah', 'Surat Pengantar/Keterangan RT & RW']
                 const spna = ['FC KK Calon Suami & Istri', 'FC KTP Calon Suami & Istri', 'Pas Foto 3x4 Calon Suami & Istri', 'Surat Pengantar/Keterangan RT & RW', 'FC Akta Cerai (Bagi Janda/Duda)']
                 const skkl = ['KK (Asli & FC)', 'KTP', 'Surat Keterangan Kelahiran dari Bidan/RS (Jika ada/ Optional)', 'Surat Pengantar/Keterangan RT & RW']
+                const loker = ['Php', 'Java']
                 const skkm = ['KK (Asli & FC)', 'KTP', 'Surat Keterangan Kematian (Jika ada/Optional)', 'Surat Pengantar/Keterangan RT & RW']
                 const skp = ['KK (Asli & FC)', 'Surat Pengantar/Keterangan RT & RW', 'Data alamat daerah tujuan']
                 const skd = ['KK (Asli & FC)', 'Surat Pengantar/Keterangan RT & RW', 'Data alamat daerah asal']
@@ -92,6 +93,9 @@
                 }else if(jenisSurat == 'SPNA'){
                     $('#syarat').html('')
                     showList(spna)
+                }else if(jenisSurat == 'LOKER'){
+                    $('#syarat').html('')
+                    showList(loker)
                 }else if(jenisSurat == 'SKKL'){
                     $('#syarat').html('')
                     showList(skkl)

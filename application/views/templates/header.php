@@ -182,7 +182,7 @@
 										<span class="sidebar-normal">Surat Keluar</span>
 									</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="https://ieglink.my.id/bukubank">
 										<span class="sidebar-mini">BB</span>
 										<span class="sidebar-normal">Buku Bank</span>
@@ -193,7 +193,7 @@
 										<span class="sidebar-mini">SU</span>
 										<span class="sidebar-normal">Buku UYHD</span>
 									</a>
-								</li>
+								</li> -->
 								<li>
 									<a href="https://ieglink.my.id/kegiatan">
 										<span class="sidebar-mini">BK</span>
