@@ -6,9 +6,13 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['notulen'] = 'notulen/index';
-$route['notulen/create'] = 'notulen/create';
-$route['notulen/store'] = 'notulen/store';
-$route['notulen/edit/(:num)'] = 'notulen/edit/$1';
-$route['notulen/update/(:num)'] = 'notulen/update/$1';
-$route['notulen/delete/(:num)'] = 'notulen/delete/$1';
+$route['bank_book'] = 'BankBookController/index'; // Menampilkan halaman form buku bank
+$route['bank_book/save'] = 'BankBookController/save'; // Menyimpan data debet dan kredit ke database
+$route['bank_book/list'] = 'BankBookController/list'; // Menampilkan daftar data yang sudah disimpan
+
+$route['UangMuka/form'] = 'UangMuka/form';
+$route['UangMuka/save'] = 'UangMuka/save';
+$route['uang_muka/save'] = 'UangMuka/save';
+$route['UangMuka/delete/(:num)'] = 'UangMuka/delete/$1';
+$route['UangMuka/edit/(:num)'] = 'UangMuka/edit/$1';
+$route['UangMuka/update'] = 'UangMuka/update';

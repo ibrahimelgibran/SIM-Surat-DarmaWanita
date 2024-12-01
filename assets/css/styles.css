@@ -2555,7 +2555,7 @@ textarea.form-control.is-invalid {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #ea2fff;
+  color: #ffbb5c;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2599,12 +2599,12 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #006bff;
+  background-color: #ffbb5c;
   border-color: #0d92f4;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #024caa;
+  background-color: #dda24e;
   border-color: #4379f2;
 }
 .btn-primary:focus,
@@ -3245,7 +3245,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #f12eff;
+  color: #ffbb5c;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4235,7 +4235,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0095ff;
+  background-color: #ffbb5c;
 }
 
 .nav-fill > .nav-link,
@@ -4896,13 +4896,13 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #c236fe;
+  color: #ffbb5c;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 .page-link:hover {
   z-index: 2;
-  color: #b300ca;
+  color: #ffbb5c;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -10477,7 +10477,7 @@ img::-moz-selection {
   border: 0;
 }
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #000000;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10498,7 +10498,7 @@ img::-moz-selection {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ea2fff;
+  color: #ffbb5c;
 }
 
 @media (min-width: 992px) {
@@ -10520,7 +10520,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #000000;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10599,7 +10599,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #006bff;
+  background: #ffbb5c;
   align-items: center;
   justify-content: center;
   opacity: 0;

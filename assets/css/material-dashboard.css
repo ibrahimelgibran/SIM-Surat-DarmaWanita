@@ -124,7 +124,7 @@
     cursor: pointer;
     border-radius: 100%;
     transition: all 0.2s ease-out;
-    border: 1px solid #9c27b0;
+    border: 1px solid #ffbb5c;
     background: #FFFFFF;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
@@ -150,7 +150,7 @@
 }
 
 .noUi-connect {
-    background: #9c27b0;
+    background: #ffbb5c;
     border-radius: 3px;
     -webkit-transition: background 450ms;
     transition: background 450ms;
@@ -346,11 +346,11 @@
 
 .slider.slider-primary .noUi-connect,
 .slider.slider-primary.noUi-connect {
-    background-color: #9c27b0;
+    background-color: #ffbb5c;
 }
 
 .slider.slider-primary .noUi-handle {
-    border-color: #9c27b0;
+    border-color: #ffbb5c;
 }
 
 .slider.slider-info .noUi-connect,
@@ -2285,7 +2285,7 @@ svg {
     margin: 0;
     border-width: 0;
     background-color: transparent;
-    color: #9c27b0;
+    color: #ffbb5c;
     box-shadow: none;
 }
 
@@ -2295,7 +2295,7 @@ svg {
 
 .bootstrap-datetimepicker-widget a[data-action]:hover span {
     background-color: #eeeeee;
-    color: #9c27b0;
+    color: #ffbb5c;
 }
 
 .bootstrap-datetimepicker-widget a[data-action]:active {
@@ -2506,7 +2506,7 @@ svg {
     content: '';
     display: inline-block;
     border: 0 0 7px 7px solid transparent;
-    border-bottom-color: #9c27b0;
+    border-bottom-color: #ffbb5c;
     border-top-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 4px;
@@ -2515,7 +2515,7 @@ svg {
 
 .bootstrap-datetimepicker-widget table td.active>div,
 .bootstrap-datetimepicker-widget table td.active:hover>div {
-    background-color: #9c27b0;
+    background-color: #ffbb5c;
     color: #FFFFFF;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
@@ -6593,8 +6593,8 @@ h2.title {
     opacity: .8;
 }
 
-.sidebar[data-active-color="purple"] li.active>a {
-    background-color: #9c27b0;
+.sidebar[data-active-color="orange"] li.active>a {
+    background-color: #ffbb5c;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
@@ -7073,7 +7073,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-default.active {
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle,
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle:focus,
 .open>.navbar .navbar-nav>li>a.btn.btn-primary.dropdown-toggle:hover {
-    background-color: #9c27b0;
+    background-color: #ffbb5c;
     color: #FFFFFF;
 }
 
@@ -7140,7 +7140,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-primary.active {
 .btn.btn-primary.btn-simple,
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple {
     background-color: transparent;
-    color: #9c27b0;
+    color: #ffbb5c;
     box-shadow: none;
 }
 
@@ -7151,7 +7151,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-primary.active {
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple:focus,
 .navbar .navbar-nav>li>a.btn.btn-primary.btn-simple:active {
     background-color: transparent;
-    color: #9c27b0;
+    color: #ffbb5c;
 }
 
 .btn.btn-info,

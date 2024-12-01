@@ -7,7 +7,7 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<title><?= $title?></title>
-	<link rel="icon" type="image/x-icon" href="<?= base_url()?>assets/img/ieg.png" />
+	<link rel="icon" type="image/x-icon" href="<?= base_url()?>assets/img/darma.png" />
 	<!-- Font Awesome icons (free version)-->
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 	<!-- Google fonts-->
@@ -35,9 +35,9 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav text-uppercase ml-auto">
 					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#profil">Profil</a></li>
-					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#struktur">New Informations</a>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#struktur">New Information</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="<?= base_url('suratonline')?>">Pengajuan Surat Notulent</a></li>
+					<li class="nav-item"><a class="nav-link" href="<?= base_url('suratonline')?>">Pengajuan Surat Notulen</a></li>
 					<li class="nav-item"><a class="nav-link" href="<?= base_url('tracking')?>">Track Surat</a></li>
 					<li class="nav-item"><a class="nav-link" href="https://ieglink.my.id/bukutamu">Buku Tamu</a></li>
 					<li class="nav-item"><a class="nav-link" target="_blank"

@@ -25,7 +25,7 @@
 
 <body>
 	<div class="wrapper">
-		<div class="sidebar" data-active-color="purple" data-background-color="black" data-image="<?= base_url() ?>/assets/img/sidebar-1.jpg">
+		<div class="sidebar" data-active-color="orange" data-background-color="black" data-image="<?= base_url() ?>/assets/img/sidebar-1.jpg">
 			<!--
         Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"
         Tip 2: you can also add an image using data-image tag
@@ -54,36 +54,14 @@
 
 									?>
 									<?= ucfirst($data['username']); ?>
-									<b class="caret"></b>
+									
 								</span>
 							</a>
-							<div class="clearfix"></div>
-							<div class="collapse" id="collapseExample">
-								<ul class="nav">
-									<!-- <li>
-                                        <a href="#">
-                                            <span class="sidebar-mini">MP</span>
-                                            <span class="sidebar-normal">My Profile</span>
-                                        </a>
-                                    </li> -->
-									<li>
-										<a href="<?= base_url() ?>user/edit/<?= $this->session->userdata('id_user'); ?>">
-											<span class="sidebar-mini">EP</span>
-											<span class="sidebar-normal">Edit Profile</span>
-										</a>
-									</li>
-									<!-- <li>
-                                        <a href="#">
-                                            <span class="sidebar-mini">S</span>
-                                            <span class="sidebar-normal">Settings</span>
-                                        </a>
-                                    </li> -->
-								</ul>
-							</div>
+							
+							
 						</div>
 					</div>
 				<?php endif; ?>
-
 
 				<ul class="nav">
 					<li class="<?php if ($title == 'Dashboard') : ?>
@@ -95,6 +73,7 @@
 							<p>Dashboard</p>
 						</a>
 					</li>
+
 
 					<li class="
 						<?php if ($title == 'Bendahara') : ?>
@@ -116,22 +95,24 @@
                         " id="bendahara">
 							<ul class="nav">
 								<li>
-									<a href="https://ieglink.my.id/bukubank">
+								<a href="<?= base_url() ?>BankBook/form">
 										<i class="material-icons">book</i>
 										<p>Buku Bank</p>
 									</a>
 								</li>
 
 								<li>
-									<a href="https://ieglink.my.id/bukuuyhd">
+									<a href="<?= base_url() ?>UangMuka/form">
 										<i class="material-icons">book</i>
 										<p>Buku UYHD</p>
 									</a>
 								</li>
 							</ul>
 
+
 							<!-- Dashboard Admin -->
 							<?php if ($this->session->userdata('level') == 'administrator') : ?>
+								
 
 					<li class="
 						<?php if ($title == 'Management Surat') : ?>
