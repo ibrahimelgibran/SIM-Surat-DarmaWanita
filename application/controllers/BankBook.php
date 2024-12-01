@@ -17,7 +17,8 @@ class BankBook extends CI_Controller
     {
         // Data yang akan dikirimkan ke view
         $data['title'] = 'Form Buku Bank';
-        
+    $data['sub_title'] = 'Data Buku Bank'; // Tambahkan sub_title di sini
+    $data['user'] = $this->session->userdata('username');
         // Load view form buku bank
         $this->load->view('templates/header', $data);  // Header template (opsional)
         $this->load->view('bukubank/bank_book_form', $data);    // View utama

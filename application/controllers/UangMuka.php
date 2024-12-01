@@ -11,6 +11,8 @@ class UangMuka extends CI_Controller {
     public function form() {
         $data['title'] = 'Form Uang Muka';
         $data['uang_muka_data'] = $this->UangMukaModel->get_all(); // Ambil data dari database
+    $data['sub_title'] = 'Data Uang Muka'; // Tambahkan sub_title di sini
+    $data['user'] = $this->session->userdata('username');
         $this->load->view('templates/header', $data);
         $this->load->view('uang_muka/form_uang', $data);
         $this->load->view('templates/footer');
@@ -59,6 +61,8 @@ class UangMuka extends CI_Controller {
     public function edit($id) {
         $data['title'] = 'Edit Uang Muka';
         $data['uang_muka'] = $this->UangMukaModel->get_by_id($id); // Ambil data yang ingin diedit
+        $data['sub_title'] = 'Data Uang Muka'; // Tambahkan sub_title di sini
+    $data['user'] = $this->session->userdata('username');
         $this->load->view('templates/header', $data);
         $this->load->view('uang_muka/edit_uang', $data);
         $this->load->view('templates/footer');
