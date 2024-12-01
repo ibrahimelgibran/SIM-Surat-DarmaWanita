@@ -68,7 +68,7 @@
                         <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
                             <form method="post" action="">
                                 <div class="card card-login card-hidden">
-                                    <div class="card-header text-center" data-background-color="purple">
+                                    <div class="card-header text-center" data-background-color="orange">
                                         <h4 class="card-title">Login</h4>
                                         <div class="social-line">
                                             <a href="#btn" class="btn btn-just-icon btn-simple">

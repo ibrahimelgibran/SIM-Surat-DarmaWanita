@@ -2,7 +2,7 @@
  <header class="masthead">
  	<div class="container">
  		<div class="masthead-subheading">Selamat Datang!</div>
- 		<div class="masthead-heading text-uppercase">DARMA WANITA</div>
+ 		<div class="masthead-heading text-uppercase">DHARMA WANITA</div>
  		<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="border-radius: 50px;" href="#profil">Lihat Profil</a>
  	</div>
  </header>
@@ -24,7 +24,7 @@
  <section class="page-section bg-light" id="struktur">
  	<div class="container">
  		<div class="text-center">
- 			<h2 class="section-heading text-uppercase">Surat Rekomendasi</h2>
+ 			<h2 class="section-heading text-uppercase">INFORMASI</h2>
  			<h3 class="section-subheading text-muted">Informasi Terupdate</h3>
  		</div>
  		<div class="row">
@@ -121,7 +121,7 @@
  		<div class="row text-justify pl-5 pr-5">
  			<p>Diberitahukan untuk melakukan Pengajuan Surat Online dimohon untuk melengkapi data dengan benar dan
  				berkas persyaratan untuk Pengajuan Surat Online di Upload. Jika terdapat permasalahan dalam mengisi
- 				form Pengajuan Surat Online dimohon kepada pengaju untuk datang langsung ke Kantor Kelurahan Pulau,
+ 				form Pengajuan Surat Online dimohon kepada pengaju untuk datang langsung ke Kanto,
  				atas perhatiannya terimakasih.</p>
  		</div>
  	</div>
