@@ -9,7 +9,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Pegawai</h4>
                         <div class="toolbar">
-                            <!--        Hexre you can write extra buttons/actions for the toolbar              -->
+                            <!--       Hexre you can write extra buttons/actions for the toolbar              -->
                             <a href="<?= base_url() ?>pegawai/tambah">
                                 <button class="btn btn-info">
                                     <span class="btn-label">
