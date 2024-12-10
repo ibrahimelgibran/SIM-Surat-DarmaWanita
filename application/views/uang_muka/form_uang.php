@@ -1,4 +1,117 @@
 <div class="container mt-5">
+<style>
+/* Tabel */
+.table {
+    border: 1px solid #dee2e6; /* Border tabel */
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+.table th {
+    background-color: #007bff; /* Warna biru untuk header tabel */
+    color: white; /* Teks putih pada header */
+    text-align: center;
+}
+
+.table td, .table th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6; /* Garis antar sel */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #e9ecef; /* Warna abu-abu terang untuk baris ganjil */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Warna putih untuk baris genap */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #d4edda; /* Warna hijau terang saat kursor hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Form */
+form {
+    border: 1px solid #ced4da; /* Border abu-abu */
+    background-color: #ffffff; /* Latar putih */
+    padding: 20px;
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+form h4 {
+    color: #007bff; /* Warna teks biru */
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Biru lebih gelap saat hover */
+    border-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Hijau lebih gelap saat hover */
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130; /* Merah lebih gelap saat hover */
+    border-color: #b21f2d;
+}
+
+/* Notifikasi Flash */
+.alert {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Teks */
+.text-center {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-weight: bold;
+    color: #343a40; /* Warna teks hitam pekat */
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+</style>
+
     <!-- Notifikasi Flash Data -->
     <?php if ($this->session->flashdata('success')): ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -52,7 +165,7 @@
                     </tbody>
                 </table>
             </div>
-            <button type="button" class="btn btn-primary" onclick="addRow()">Tambah Baris</button>
+            <!-- <button type="button" class="btn btn-primary" onclick="addRow()">Tambah Baris</button> -->
         </div>
     </div>
 
@@ -76,6 +189,7 @@
                     <th>Jumlah Pajak</th>
                     <th>Disetor Tunai</th>
                     <th>Saldo Uang Muka</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -92,12 +206,14 @@
         <td><?= $row->disetor_tunai; ?></td>
         <td><?= $row->saldo_uang_muka; ?></td>
         <td>
+        <a href="<?= site_url('UangMuka/edit/'.$row->id); ?>" class="btn btn-warning">Edit</a>
+        <a href="<?= site_url('UangMuka/delete/'.$row->id); ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</a>
 
         </td>
-        <td>
-            <a href="<?= site_url('UangMuka/edit/'.$row->id); ?>" class="btn btn-warning">Edit</a>
-            <a href="<?= site_url('UangMuka/delete/'.$row->id); ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</a>
-        </td>
+        
+            
+            
+        
     </tr>
 <?php endforeach; ?>
 
