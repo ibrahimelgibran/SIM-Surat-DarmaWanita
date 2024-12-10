@@ -25,7 +25,7 @@
             </ul>
         </nav> -->
         <p class="copyright pull-right">
-            Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>. All rights reserved.
+            Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>. Dharma Wanita 2024.
         </p>
     </div>
 </footer>

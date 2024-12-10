@@ -95,7 +95,7 @@
                         " id="bendahara">
 							<ul class="nav">
 								<li>
-								<a href="<?= base_url() ?>BankBook/form">
+								<a href="<?= base_url() ?>BukuBank/index">
 										<i class="material-icons">book</i>
 										<p>Buku Bank</p>
 									</a>
@@ -177,19 +177,19 @@
 									</a>
 								</li> -->
 								<li>
-									<a href="https://ieglink.my.id/kegiatan">
+									<a href="<?= base_url() ?>Kegiatan/index">
 										<span class="sidebar-mini">BK</span>
 										<span class="sidebar-normal">Buku Kegiatan</span>
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/rapatinti">
+									<a href="<?= base_url() ?>Permasalahan/index">
 										<span class="sidebar-mini">BRPI</span>
 										<span class="sidebar-normal">Buku Rapat Pengurus Inti</span>
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/harian">
+									<a href="<?= base_url() ?>BukuHarian/index">
 										<span class="sidebar-mini">BH</span>
 										<span class="sidebar-normal">Buku Harian</span>
 									</a>
