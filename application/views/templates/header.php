@@ -225,7 +225,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/registerkb">
+									<a href="<?= base_url() ?>PelayananKB/index">
 										<span class="sidebar-mini">BRKB</span>
 										<span class="sidebar-normal">Buku Register KB</span>
 									</a>
