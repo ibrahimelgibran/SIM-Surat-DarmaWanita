@@ -195,31 +195,31 @@
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/inventari">
+									<a href="<?= base_url() ?>Inventaris/index">
 										<span class="sidebar-mini">BI</span>
 										<span class="sidebar-normal">Buku Inventaris</span>
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/kerja">
+									<a href="<?= base_url() ?>ProgramKerja/index">
 										<span class="sidebar-mini">BPK</span>
 										<span class="sidebar-normal">Buku Program Kerja</span>
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/pelaksanaan">
+									<a href="<?= base_url() ?>Pelaksanaan/index">
 										<span class="sidebar-mini">BPPK</span>
 										<span class="sidebar-normal">Buku Pelaksaan Program Kerja</span>
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/santunan">
+									<a href="<?= base_url() ?>Santunan/index">
 										<span class="sidebar-mini">BSP</span>
 										<span class="sidebar-normal">Buku Santunan Pendidikan</span>
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/bahan">
+									<a href="<?= base_url() ?>Rapat/index">
 										<span class="sidebar-mini">BBRPI</span>
 										<span class="sidebar-normal">Buku Bahan Rapat Pengurus Inti</span>
 									</a>
@@ -231,9 +231,15 @@
 									</a>
 								</li>
 								<li>
-									<a href="https://ieglink.my.id/datainduk">
+									<a href="<?= base_url() ?>DataDwp/index">
 										<span class="sidebar-mini">DWP</span>
 										<span class="sidebar-normal">Data Induk Anggota DWP Tahun</span>
+									</a>
+								</li>
+								<li>
+									<a href="<?= base_url() ?>Aktivitas/index">
+										<span class="sidebar-mini">DK</span>
+										<span class="sidebar-normal">Data Kegiatan Tahunan</span>
 									</a>
 								</li>
 								<li class="
