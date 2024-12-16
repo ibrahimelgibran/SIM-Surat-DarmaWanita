@@ -34,6 +34,7 @@
                             <select class="selectpicker" name="level" id="level" data-style="btn btn-primary btn-round" title="Single Select" data-size="7">
                                 <option disabled selected>Pilih Hak Akses</option>
                                 <option value="administrator">Administrator</option>
+                                <!-- <option value="iegcode">iegcode</option> -->
                                 <option value="pegawai">Pegawai</option>
                             </select>
                         </div>

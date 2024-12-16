@@ -36,9 +36,11 @@
                                     <option disabled selected>Pilih Hak Akses</option>
                                     <?php if ($user['level'] == 'administrator') : ?>
                                         <option selected='true' value="administrator">Administrator</option>
+                                        <!-- <option selected='true' value="iegcode">iegcode</option> -->
                                         <option value="pegawai">Pegawai</option>
                                     <?php else : ?>
                                         <option value="administrator">Administrator</option>
+                                        <!-- <option value="iegcode">iegcode</option> -->
                                         <option selected='true' value="pegawai">Pegawai</option>
                                     <?php endif; ?>
                                 </select>

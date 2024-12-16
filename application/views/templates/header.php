@@ -176,49 +176,81 @@
 										<span class="sidebar-normal">Buku UYHD</span>
 									</a>
 								</li> -->
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Data kegiatan') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>Kegiatan/index">
 										<span class="sidebar-mini">BK</span>
 										<span class="sidebar-normal">Buku Kegiatan</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Permasalahan') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>Permasalahan/index">
 										<span class="sidebar-mini">BRPI</span>
 										<span class="sidebar-normal">Buku Rapat Pengurus Inti</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Data Buku Harian') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>BukuHarian/index">
 										<span class="sidebar-mini">BH</span>
 										<span class="sidebar-normal">Buku Harian</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Data Inventaris') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>Inventaris/index">
 										<span class="sidebar-mini">BI</span>
 										<span class="sidebar-normal">Buku Inventaris</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Data Program Kerja') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>ProgramKerja/index">
 										<span class="sidebar-mini">BPK</span>
 										<span class="sidebar-normal">Buku Program Kerja</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Buku Pelaksanaan Program Kerja') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>Pelaksanaan/index">
 										<span class="sidebar-mini">BPPK</span>
 										<span class="sidebar-normal">Buku Pelaksaan Program Kerja</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Buku Santunan Pendidikan') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>Santunan/index">
 										<span class="sidebar-mini">BSP</span>
 										<span class="sidebar-normal">Buku Santunan Pendidikan</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Buku Bahan Rapat Pengurus Inti') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>Rapat/index">
 										<span class="sidebar-mini">BBRPI</span>
 										<span class="sidebar-normal">Buku Bahan Rapat Pengurus Inti</span>
@@ -230,13 +262,21 @@
 										<span class="sidebar-normal">Buku Register KB</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Data Induk Anggota DWP') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>DataDwp/index">
 										<span class="sidebar-mini">DWP</span>
 										<span class="sidebar-normal">Data Induk Anggota DWP Tahun</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Data Aktivitas Tahunan') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>Aktivitas/index">
 										<span class="sidebar-mini">DK</span>
 										<span class="sidebar-normal">Data Kegiatan Tahunan</span>
