@@ -256,7 +256,11 @@
 										<span class="sidebar-normal">Buku Bahan Rapat Pengurus Inti</span>
 									</a>
 								</li>
-								<li>
+								<li class="
+                                <?php if ($sub_title == 'Register Pelayanan KB') : ?>
+                                    <?= 'active'; ?>
+                                <?php endif; ?>
+                                ">
 									<a href="<?= base_url() ?>PelayananKB/index">
 										<span class="sidebar-mini">BRKB</span>
 										<span class="sidebar-normal">Buku Register KB</span>
