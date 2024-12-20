@@ -8,11 +8,16 @@ class Rapat extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Buku Bahan Rapat Pengurus Inti'
+        ];
+
         $data['title'] = 'Buku Bahan Rapat Pengurus Inti';
         $data['bahan_rapat'] = $this->Rapat_model->getAll();
-        $data['sub_title'] = 'Buku Bahan Rapat Pengurus Inti'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Buku Bahan Rapat Pengurus Inti'; // Tambahkan sub_title di sini
         $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('rapat/rapat_view', $data);
         $this->load->view('templates/footer');
 

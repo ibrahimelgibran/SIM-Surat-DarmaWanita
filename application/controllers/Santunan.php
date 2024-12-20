@@ -8,11 +8,16 @@ class Santunan extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Buku Santunan Pendidikan'
+        ];
+
         $data['title'] = 'Buku Santunan Pendidikan';
         $data['santunan'] = $this->Santunan_model->getAll();
-        $data['sub_title'] = 'Buku Santunan Pendidikan'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Buku Santunan Pendidikan'; // Tambahkan sub_title di sini
         $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('santunan/santunan_view', $data);
         $this->load->view('templates/footer');
     }

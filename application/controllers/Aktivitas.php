@@ -10,11 +10,16 @@ class Aktivitas extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Data Aktivitas Tahunan'
+        ];
+
         $data['title'] = 'Data Aktivitas Tahunan';
         $data['aktivitas'] = $this->Aktivitas_model->get_all_aktivitas();
-        $data['sub_title'] = 'Data Aktivitas Tahunan'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Data Aktivitas Tahunan'; // Tambahkan sub_title di sini
     $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('aktivitas/aktivitas_view', $data);
         $this->load->view('templates/footer');
 

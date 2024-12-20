@@ -8,11 +8,16 @@ class PelayananKB extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Register Pelayanan KB'
+        ];
+
         $data['title'] = 'Register Pelayanan KB';
         $data['kb_data'] = $this->PelayananKB_model->get_all();
-        $data['sub_title'] = 'Register Pelayanan KB'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Register Pelayanan KB'; // Tambahkan sub_title di sini
     $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('kb/kb_view', $data);
         $this->load->view('templates/footer');
 

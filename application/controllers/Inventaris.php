@@ -11,11 +11,16 @@ class Inventaris extends CI_Controller
 
     public function index()
     {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Data Inventaris'
+        ];
+
         $data['title'] = 'Data Inventaris';
         $data['inventaris'] = $this->Inventaris_model->get_all();
-        $data['sub_title'] = 'Data Inventaris'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Data Inventaris'; // Tambahkan sub_title di sini
     $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('inventaris/inventaris_view', $data);
         $this->load->view('templates/footer');
 

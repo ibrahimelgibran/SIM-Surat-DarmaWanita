@@ -181,7 +181,7 @@
                                     <?= 'active'; ?>
                                 <?php endif; ?>
                                 ">
-									<a href="<?= base_url() ?>Kegiatan/index">
+									<a href="<?= base_url() ?>Kegiatan">
 										<span class="sidebar-mini">BK</span>
 										<span class="sidebar-normal">Buku Kegiatan</span>
 									</a>

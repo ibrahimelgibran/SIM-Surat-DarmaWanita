@@ -8,11 +8,16 @@ class DataDwp extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Data Induk Anggota DWP'
+        ];
+
         $data['title'] = 'Data Induk Anggota DWP';
         $data['data_dwp'] = $this->DataDwp_model->getAll();
-        $data['sub_title'] = 'Data Induk Anggota DWP'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Data Induk Anggota DWP'; // Tambahkan sub_title di sini
     $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('dwp/data_dwp_view', $data);
         $this->load->view('templates/footer');
 

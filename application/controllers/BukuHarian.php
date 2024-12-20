@@ -8,11 +8,17 @@ class BukuHarian extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Data Buku Harian'
+        ];
+
         $data['title'] = 'Data Buku Harian';
         $data['buku_harian'] = $this->BukuHarianModel->get_all();
-        $data['sub_title'] = 'Data Buku Harian'; // Tambahkan sub_title di sini
-    $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $judul['sub_title'] = 'Data Buku Harian'; // Tambahkan sub_title di sini
+
+        $data['user'] = $this->session->userdata('username');
+        $this->load->view('templates/header', $judul);
         $this->load->view('bukuharian/buku_harian_view', $data);
         $this->load->view('templates/footer');
     }

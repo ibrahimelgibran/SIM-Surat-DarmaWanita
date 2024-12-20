@@ -8,11 +8,17 @@ class Kegiatan extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Data Kegiatan'
+        ];
+
         $data['title'] = 'Data Kegiatan';
+        $judul['sub_title'] = 'Data kegiatan'; 
         $data['kegiatan'] = $this->Kegiatan_model->get_all_kegiatan();
-        $data['sub_title'] = 'Data kegiatan'; // Tambahkan sub_title di sini
-    $data['user'] = $this->session->userdata('username');
-    $this->load->view('templates/header', $data);
+        $data['user'] = $this->session->userdata('username');
+        
+        $this->load->view('templates/header', $judul);
         $this->load->view('kegiatan/index', $data);
         $this->load->view('templates/footer');
     }

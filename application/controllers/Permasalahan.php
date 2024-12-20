@@ -6,11 +6,17 @@ class Permasalahan extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Permasalahan'
+        ];
+
         $data['title'] = 'Permasalahan';
         $data['permasalahan'] = $this->Permasalahan_model->get_all();
-        $data['sub_title'] = 'Permasalahan'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Permasalahan'; // Tambahkan sub_title di sini
         $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        
+        $this->load->view('templates/header', $judul);
         $this->load->view('permasalahan/permasalahan_view', $data);
         $this->load->view('templates/footer');
     }

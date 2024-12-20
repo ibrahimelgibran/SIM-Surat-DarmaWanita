@@ -8,11 +8,16 @@ class Pelaksanaan extends CI_Controller {
     }
 
     public function index() {
+        $judul = [
+            'title' => 'Management Surat',
+            'sub_title' => 'Buku Pelaksanaan Program Kerja'
+        ];
+
         $data['title'] = 'Buku Pelaksanaan Program Kerja';
         $data['programs'] = $this->Pelaksanaan_model->getAll();
-        $data['sub_title'] = 'Buku Pelaksanaan Program Kerja'; // Tambahkan sub_title di sini
+        $judul['sub_title'] = 'Buku Pelaksanaan Program Kerja'; // Tambahkan sub_title di sini
     $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('pelaksanaan/pelaksanaan_view', $data);
         $this->load->view('templates/footer');
 
