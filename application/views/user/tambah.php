@@ -35,13 +35,7 @@
                                 <option disabled selected>Pilih Hak Akses</option>
                                 <option value="administrator">Administrator</option>
                                 <!-- <option value="iegcode">iegcode</option> -->
-                                <option value="sekretaris">Sekretaris</option>
                                 <option value="pegawai">Pegawai</option>
-                                <option value="bendahara">Bendahara</option>
-                                <option value="pendidikan">Pendidikan</option>
-                                <option value="ekonomi">Ekonomi</option>
-                                <option value="sosialbudaya">SosialBudaya</option>
-
                             </select>
                         </div>
                         <?= form_error('level', '<div class="text-danger">', '</div>'); ?>
