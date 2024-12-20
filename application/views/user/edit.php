@@ -42,6 +42,11 @@
                                         <option value="administrator">Administrator</option>
                                         <!-- <option value="iegcode">iegcode</option> -->
                                         <option selected='true' value="pegawai">Pegawai</option>
+                                        <option value="sekretaris">Sekretaris</option>
+                                        <option value="bendahara">Bendahara</option>
+                                        <option value="pendidikan">Pendidikan</option>
+                                        <option value="ekonomi">Ekonomi</option>
+                                        <option value="sosialbudaya">SosialBudaya</option>
                                     <?php endif; ?>
                                 </select>
                             </div>
