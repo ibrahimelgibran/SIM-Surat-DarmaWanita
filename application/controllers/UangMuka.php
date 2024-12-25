@@ -9,11 +9,16 @@ class UangMuka extends CI_Controller {
 
     // Menampilkan form
     public function form() {
-        $data['title'] = 'Form Uang Muka';
+        $judul = [
+            'title' => 'Bendahara',
+            'sub_title' => 'Data Uang Muka'
+        ];
+
+        $data['title'] = 'Bendahara';
         $data['uang_muka_data'] = $this->UangMukaModel->get_all(); // Ambil data dari database
-    $data['sub_title'] = 'Data Uang Muka'; // Tambahkan sub_title di sini
+    $judul['sub_title'] = 'Data Uang Muka'; // Tambahkan sub_title di sini
     $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $judul);
         $this->load->view('uang_muka/form_uang', $data);
         $this->load->view('templates/footer');
     }

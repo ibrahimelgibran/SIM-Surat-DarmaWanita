@@ -9,11 +9,17 @@ class BukuBank extends CI_Controller {
     }
 
     public function index() {
-        $data['title'] = 'Form Buku Bank';
+        $judul = [
+            'title' => 'Bendahara',
+            'sub_title' => 'Data Buku Bank'
+        ];
+
+        $data['title'] = 'Bendahara';
         $data['transaksi'] = $this->BukuBank_model->get_all_data();
-        $data['sub_title'] = 'Data Buku Bank'; // Tambahkan sub_title di sini
-    $data['user'] = $this->session->userdata('username');
-        $this->load->view('templates/header', $data);
+        $judul['sub_title'] = 'Data Buku Bank'; // Tambahkan sub_title di sini
+
+        $data['user'] = $this->session->userdata('username');
+        $this->load->view('templates/header', $judul);
         $this->load->view('bukubank/buku_bank', $data);
         $this->load->view('templates/footer');
 
