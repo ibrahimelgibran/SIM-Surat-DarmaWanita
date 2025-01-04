@@ -24,7 +24,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #28a745;
+    color: #FFA500;
     margin-bottom: 20px;
     font-size: 28px;
 }
@@ -48,7 +48,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #28a745;
+    background-color: #FFA500;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
@@ -66,7 +66,7 @@ button {
     padding: 10px 15px;
     font-size: 14px;
     color: #fff;
-    background-color: #007bff;
+    background-color: #FFA500;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #FFA500;
     text-decoration: none;
 }
 
@@ -95,7 +95,7 @@ button.delete:hover {
 
 a {
     display: inline-block;
-    color: #28a745;
+    color: #FFA500;
     text-decoration: none;
     font-size: 14px;
     margin-top: 20px;

@@ -36,10 +36,18 @@
                                     <option disabled selected>Pilih Hak Akses</option>
                                     <?php if ($user['level'] == 'administrator') : ?>
                                         <option selected='true' value="administrator">Administrator</option>
+                                        <option selected='true' value="sekretaris">Sekretaris</option>
+                                        <option selected='true' value="ekonomi">Ekonomi</option>
+                                        <option selected='true' value="sosialbudaya">SosialBudaya</option>
+                                        <option selected='true' value="pendidikan">Pendidikan</option>
                                         <!-- <option selected='true' value="iegcode">iegcode</option> -->
                                         <option value="pegawai">Pegawai</option>
                                     <?php else : ?>
                                         <option value="administrator">Administrator</option>
+                                        <option value="sekretaris">Sekretaris</option>
+                                        <option value="ekonomi">Ekonomi</option>
+                                        <option value="sosialbudaya">SosialBudaya</option>
+                                        <option value="pendidikan">Pendidikan</option>
                                         <!-- <option value="iegcode">iegcode</option> -->
                                         <option selected='true' value="pegawai">Pegawai</option>
                                     <?php endif; ?>
@@ -48,12 +56,6 @@
                             <?= form_error('level', '<div class="text-danger">', '</div>'); ?>
 
                         <?php endif; ?>
-
-
-
-
-
-
 
                         <div class="category form-category">
                             <div class="form-footer text-right">

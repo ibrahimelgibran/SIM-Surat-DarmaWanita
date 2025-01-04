@@ -74,41 +74,442 @@
 						</a>
 					</li>
 
-
-					<li class="
-						<?php if ($title == 'Bendahara') : ?>
-							<?= 'active'; ?>
-						<?php endif; ?>
-						">
-						<a data-toggle="collapse" href="#bendahara">
-							<i class="material-icons">email</i>
-							<p>Bendahara
-								<b class="caret"></b>
-							</p>
-						</a>
-						<div class="
-                        <?php if ($title == 'Bendahara') : ?>
-                            <?= 'collapse in'; ?>
-                        <?php else : ?>
-                            <?= 'collapse'; ?>
-                        <?php endif; ?>
-                        " id="bendahara">
-							<ul class="nav">
-								<li>
-								<a href="<?= base_url() ?>BukuBank/index">
-										<i class="material-icons">book</i>
-										<p>Buku Bank</p>
-									</a>
-								</li>
-
-								<li>
-									<a href="<?= base_url() ?>UangMuka/form">
-										<i class="material-icons">book</i>
-										<p>Buku UYHD</p>
-									</a>
-								</li>
-							</ul>
 							
+							<!-- Dashboard Bendahara -->
+					<?php if ($this->session->userdata('level') == 'bendahara') : ?>
+
+<li class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'active'; ?>
+	<?php endif; ?>
+	">
+	<a data-toggle="collapse" href="#pagesExamples">
+		<i class="material-icons">email</i>
+		<p>Bendahara
+			<b class="caret"></b>
+		</p>
+	</a>
+	<div class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'collapse in'; ?>
+	<?php else : ?>
+		<?= 'collapse'; ?>
+	<?php endif; ?>
+	" id="pagesExamples">
+		<ul class="nav">
+		<li class="
+			<?php if ($sub_title == 'Data Buku Bank') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+			
+			<a href="<?= base_url() ?>BukuBank/index">
+					<!-- <i class="material-icons">book</i> -->
+					<p>Buku Bank</p>
+				</a>
+			</li>
+
+			
+			<li class="
+			<?php if ($sub_title == 'Data Uang Muka') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>UangMuka/form">
+					<!-- <i class="material-icons">book</i> -->
+					<p>Buku UYHD</p>
+				</a>
+			</li>
+		</ul>
+	
+		<?php endif; ?>
+
+		<!-- Dashboard sekretaris -->
+		<?php if ($this->session->userdata('level') == 'sekretaris') : ?>
+
+		<li class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'active'; ?>
+	<?php endif; ?>
+	">
+	<a data-toggle="collapse" href="#pagesExamples">
+		<i class="material-icons">email</i>
+		<p>Sekretaris
+			<b class="caret"></b>
+		</p>
+	</a>
+			<div class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'collapse in'; ?>
+	<?php else : ?>
+		<?= 'collapse'; ?>
+	<?php endif; ?>
+	" id="pagesExamples">
+		<ul class="nav">
+			<li class="
+			<?php if ($sub_title == 'Data kegiatan') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Kegiatan/index">
+					<span class="sidebar-mini">BK</span>
+					<span class="sidebar-normal">Buku Kegiatan</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Permasalahan') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Permasalahan/index">
+					<span class="sidebar-mini">BRPI</span>
+					<span class="sidebar-normal">Buku Rapat Pengurus Inti</span>
+				</a>
+			</li>
+
+			<li class="
+			<?php if ($sub_title == 'Data Uang Muka') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>UangMuka/form">
+					<!-- <i class="material-icons">book</i> -->
+					<p>Buku UYHD</p>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Inventaris') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Inventaris/index">
+					<!-- <span class="sidebar-mini">BI</span> -->
+					<span class="sidebar-normal">Buku Inventaris</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Buku Harian') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>BukuHarian/index">
+					<!-- <span class="sidebar-mini">BH</span> -->
+					<span class="sidebar-normal">Buku Harian</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>ProgramKerja/index">
+					<!-- <span class="sidebar-mini">BPK</span> -->
+					<span class="sidebar-normal">Buku Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Buku Pelaksanaan Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Pelaksanaan/index">
+					<!-- <span class="sidebar-mini">BPPK</span> -->
+					<span class="sidebar-normal">Buku Pelaksaan Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Buku Bahan Rapat Pengurus Inti') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Rapat/index">
+					<!-- <span class="sidebar-mini">BBRPI</span> -->
+					<span class="sidebar-normal">Buku Bahan Rapat Pengurus Inti</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Surat Masuk') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>surat/surat_masuk">
+					<!-- <span class="sidebar-mini">M</span> -->
+					<span class="sidebar-normal">Surat Masuk</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Surat Keluar') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>surat/surat_keluar">
+					<!-- <span class="sidebar-mini">K</span> -->
+					<span class="sidebar-normal">Surat Keluar</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Induk Anggota DWP') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>DataDwp/index">
+					<!-- <span class="sidebar-mini">DWP</span> -->
+					<span class="sidebar-normal">Data Induk Anggota DWP Tahun</span>
+				</a>
+			</li>
+
+			</ul>
+			<?php endif; ?>
+
+		<!-- Dashboard Pendidikan -->
+		<?php if ($this->session->userdata('level') == 'pendidikan') : ?>
+
+			<li class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'active'; ?>
+	<?php endif; ?>
+	">
+	<a data-toggle="collapse" href="#pagesExamples">
+		<i class="material-icons">email</i>
+		<p>Pendidikan
+			<b class="caret"></b>
+		</p>
+	</a>
+			<div class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'collapse in'; ?>
+	<?php else : ?>
+		<?= 'collapse'; ?>
+	<?php endif; ?>
+	" id="pagesExamples">
+		<ul class="nav">
+		<li class="
+			<?php if ($sub_title == 'Buku Santunan Pendidikan') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Santunan/index">
+					<!-- <span class="sidebar-mini">BSP</span> -->
+					<span class="sidebar-normal">Buku Santunan Pendidikan</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>ProgramKerja/index">
+					<!-- <span class="sidebar-mini">BPK</span> -->
+					<span class="sidebar-normal">Buku Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Buku Pelaksanaan Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Pelaksanaan/index">
+					<!-- <span class="sidebar-mini">BPPK</span> -->
+					<span class="sidebar-normal">Buku Pelaksaan Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data kegiatan') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Kegiatan/index">
+					<!-- <span class="sidebar-mini">BK</span> -->
+					<span class="sidebar-normal">Buku Kegiatan</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Uang Muka') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>UangMuka/form">
+					<!-- <i class="material-icons">book</i> -->
+					<p>Buku UYHD</p>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Register Pelayanan KB') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>PelayananKB/index">
+					<!-- <span class="sidebar-mini">BRKB</span> -->
+					<span class="sidebar-normal">Buku Register KB</span>
+				</a>
+			</li>
+			
+			</ul>
+
+			<?php endif; ?>
+
+			<!-- Dashboard Ekonomi -->
+		<?php if ($this->session->userdata('level') == 'ekonomi') : ?>
+
+			<li class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'active'; ?>
+	<?php endif; ?>
+	">
+	<a data-toggle="collapse" href="#pagesExamples">
+		<i class="material-icons">email</i>
+		<p>Ekonomi
+			<b class="caret"></b>
+		</p>
+	</a>
+			<div class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'collapse in'; ?>
+	<?php else : ?>
+		<?= 'collapse'; ?>
+	<?php endif; ?>
+	" id="pagesExamples">
+		<ul class="nav">
+		
+			<li class="
+			<?php if ($sub_title == 'Data Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>ProgramKerja/index">
+					<!-- <span class="sidebar-mini">BPK</span> -->
+					<span class="sidebar-normal">Buku Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Buku Pelaksanaan Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Pelaksanaan/index">
+					<!-- <span class="sidebar-mini">BPPK</span> -->
+					<span class="sidebar-normal">Buku Pelaksaan Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Uang Muka') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>UangMuka/form">
+					<!-- <i class="material-icons">book</i> -->
+					<p>Buku UYHD</p>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data kegiatan') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Kegiatan/index">
+					<!-- <span class="sidebar-mini">BK</span> -->
+					<span class="sidebar-normal">Buku Kegiatan</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Buku Bahan Rapat Pengurus Inti') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Rapat/index">
+					<!-- <span class="sidebar-mini">BBRPI</span> -->
+					<span class="sidebar-normal">Buku Bahan Rapat Pengurus Inti</span>
+				</a>
+			</li>
+
+			</ul>
+			<?php endif; ?>
+
+			<!-- Dashboard SosialBudaya -->
+		<?php if ($this->session->userdata('level') == 'sosialbudaya') : ?>
+			<li class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'active'; ?>
+	<?php endif; ?>
+	">
+	<a data-toggle="collapse" href="#pagesExamples">
+		<i class="material-icons">email</i>
+		<p>sosialbudaya
+			<b class="caret"></b>
+		</p>
+	</a>
+			<div class="
+	<?php if ($title == 'Management Surat') : ?>
+		<?= 'collapse in'; ?>
+	<?php else : ?>
+		<?= 'collapse'; ?>
+	<?php endif; ?>
+	" id="pagesExamples">
+		<ul class="nav">
+		<li class="
+			<?php if ($sub_title == 'Data Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>ProgramKerja/index">
+					<!-- <span class="sidebar-mini">BPK</span> -->
+					<span class="sidebar-normal">Buku Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Buku Pelaksanaan Program Kerja') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Pelaksanaan/index">
+					<!-- <span class="sidebar-mini">BPPK</span> -->
+					<span class="sidebar-normal">Buku Pelaksaan Program Kerja</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Buku Bahan Rapat Pengurus Inti') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Rapat/index">
+					<!-- <span class="sidebar-mini">BBRPI</span> -->
+					<span class="sidebar-normal">Buku Bahan Rapat Pengurus Inti</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Buku Harian') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>BukuHarian/index">
+					<!-- <span class="sidebar-mini">BH</span> -->
+					<span class="sidebar-normal">Buku Harian</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data kegiatan') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>Kegiatan/index">
+					<!-- <span class="sidebar-mini">BK</span> -->
+					<span class="sidebar-normal">Buku Kegiatan</span>
+				</a>
+			</li>
+			<li class="
+			<?php if ($sub_title == 'Data Uang Muka') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>UangMuka/form">
+					<!-- <i class="material-icons">book</i> -->
+					<p>Buku UYHD</p>
+				</a>
+			</li>
+
+		</ul>
+			<?php endif; ?>
+
 
 
 							<!-- Dashboard Admin -->
@@ -140,7 +541,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>surat/pengajuan">
-										<span class="sidebar-mini">M</span>
+										<!-- <span class="sidebar-mini">M</span> -->
 										<span class="sidebar-normal">Pengajuan Surat</span>
 									</a>
 								</li>
@@ -150,7 +551,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>surat/surat_masuk">
-										<span class="sidebar-mini">M</span>
+										<!-- <span class="sidebar-mini">M</span> -->
 										<span class="sidebar-normal">Surat Masuk</span>
 									</a>
 								</li>
@@ -160,10 +561,20 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>surat/surat_keluar">
-										<span class="sidebar-mini">K</span>
+										<!-- <span class="sidebar-mini">K</span> -->
 										<span class="sidebar-normal">Surat Keluar</span>
 									</a>
 								</li>
+								<li class="
+			<?php if ($sub_title == 'Data Uang Muka') : ?>
+				<?= 'active'; ?>
+			<?php endif; ?>
+			">
+				<a href="<?= base_url() ?>UangMuka/form">
+					<!-- <i class="material-icons">book</i> -->
+					<p>Buku UYHD</p>
+				</a>
+			</li>
 								<!-- <li>
 									<a href="https://ieglink.my.id/bukubank">
 										<span class="sidebar-mini">BB</span>
@@ -182,7 +593,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>Kegiatan/index">
-										<span class="sidebar-mini">BK</span>
+										<!-- <span class="sidebar-mini">BK</span> -->
 										<span class="sidebar-normal">Buku Kegiatan</span>
 									</a>
 								</li>
@@ -192,7 +603,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>Permasalahan/index">
-										<span class="sidebar-mini">BRPI</span>
+										<!-- <span class="sidebar-mini">BRPI</span> -->
 										<span class="sidebar-normal">Buku Rapat Pengurus Inti</span>
 									</a>
 								</li>
@@ -202,7 +613,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>BukuHarian/index">
-										<span class="sidebar-mini">BH</span>
+										<!-- <span class="sidebar-mini">BH</span> -->
 										<span class="sidebar-normal">Buku Harian</span>
 									</a>
 								</li>
@@ -212,7 +623,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>Inventaris/index">
-										<span class="sidebar-mini">BI</span>
+										<!-- <span class="sidebar-mini">BI</span> -->
 										<span class="sidebar-normal">Buku Inventaris</span>
 									</a>
 								</li>
@@ -222,7 +633,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>ProgramKerja/index">
-										<span class="sidebar-mini">BPK</span>
+										<!-- <span class="sidebar-mini">BPK</span> -->
 										<span class="sidebar-normal">Buku Program Kerja</span>
 									</a>
 								</li>
@@ -232,7 +643,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>Pelaksanaan/index">
-										<span class="sidebar-mini">BPPK</span>
+										<!-- <span class="sidebar-mini">BPPK</span> -->
 										<span class="sidebar-normal">Buku Pelaksaan Program Kerja</span>
 									</a>
 								</li>
@@ -242,7 +653,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>Santunan/index">
-										<span class="sidebar-mini">BSP</span>
+										<!-- <span class="sidebar-mini">BSP</span> -->
 										<span class="sidebar-normal">Buku Santunan Pendidikan</span>
 									</a>
 								</li>
@@ -252,7 +663,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>Rapat/index">
-										<span class="sidebar-mini">BBRPI</span>
+										<!-- <span class="sidebar-mini">BBRPI</span> -->
 										<span class="sidebar-normal">Buku Bahan Rapat Pengurus Inti</span>
 									</a>
 								</li>
@@ -262,7 +673,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>PelayananKB/index">
-										<span class="sidebar-mini">BRKB</span>
+										<!-- <span class="sidebar-mini">BRKB</span> -->
 										<span class="sidebar-normal">Buku Register KB</span>
 									</a>
 								</li>
@@ -272,7 +683,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>DataDwp/index">
-										<span class="sidebar-mini">DWP</span>
+										<!-- <span class="sidebar-mini">DWP</span> -->
 										<span class="sidebar-normal">Data Induk Anggota DWP Tahun</span>
 									</a>
 								</li>
@@ -282,7 +693,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>Aktivitas/index">
-										<span class="sidebar-mini">DK</span>
+										<!-- <span class="sidebar-mini">DK</span> -->
 										<span class="sidebar-normal">Data Kegiatan Tahunan</span>
 									</a>
 								</li>
@@ -292,7 +703,7 @@
                                 <?php endif; ?>
                                 ">
 									<a href="<?= base_url() ?>surat/surat_keterangan">
-										<span class="sidebar-mini">SK</span>
+										<!-- <span class="sidebar-mini">SK</span> -->
 										<span class="sidebar-normal">Data Keterangan</span>
 									</a>
 								</li>

@@ -34,7 +34,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #007BFF;
+    background-color: #FFA500;
     color: white;
     text-transform: uppercase;
 }
@@ -49,7 +49,7 @@ table tr:hover {
 
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: #FFA500;
 }
 
 a:hover {
@@ -79,13 +79,13 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #007BFF;
+    border-color: #FFA500;
     outline: none;
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
 }
 
 form button {
-    background-color: #007BFF;
+    background-color: #FFA500;
     color: white;
     border: none;
     cursor: pointer;
@@ -94,7 +94,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #FFA500;
 }
 
 /* Responsive Styles */

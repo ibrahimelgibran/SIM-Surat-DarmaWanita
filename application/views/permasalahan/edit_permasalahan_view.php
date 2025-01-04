@@ -26,7 +26,7 @@ body {
 /* Title Styling */
 h1 {
     text-align: center;
-    color: #4CAF50;
+    color: #FFA500;
 }
 
 /* Form Styling */
@@ -44,7 +44,7 @@ form input {
 }
 
 form input:focus {
-    border-color: #4CAF50;
+    border-color: #FFA500;
     outline: none;
 }
 
@@ -52,7 +52,7 @@ form button {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #4CAF50;
+    background-color: #FFA500;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -60,7 +60,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #FFA500;
 }
 
     </style>
@@ -74,5 +74,8 @@ form button:hover {
         <input type="text" name="keterangan" value="<?= $permasalahan->keterangan ?>" required>
         <button type="submit">Update</button>
     </form>
+    <div class="back-link">
+        <a href="<?= site_url('Permasalahan'); ?>">&larr; Kembali ke Daftar Buku Permasalahan</a>
+    </div>
 </body>
 </html>

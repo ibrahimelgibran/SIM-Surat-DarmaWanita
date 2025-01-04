@@ -25,7 +25,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #28a745;
+    color: #FFA500;
     margin-bottom: 20px;
     font-size: 28px;
 }
@@ -53,7 +53,7 @@ form input, form textarea, form select {
 }
 
 form input:focus, form textarea:focus, form select:focus {
-    border-color: #28a745;
+    border-color: #FFA500;
     outline: none;
     box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
@@ -62,7 +62,7 @@ button {
     padding: 12px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #28a745;
+    background-color: #FFA500;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -72,14 +72,14 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #FFA500;
 }
 
 a {
     display: block;
     text-align: center;
     margin-top: 15px;
-    color: #007bff;
+    color: #FFA500;
     text-decoration: none;
     font-size: 14px;
 }
@@ -111,6 +111,9 @@ a:hover {
 
             <button type="submit">Simpan</button>
         </form>
+    </div>
+    <div class="back-link">
+        <a href="<?= site_url('Kegiatan'); ?>">&larr; Kembali ke Daftar Buku Kegiatan</a>
     </div>
 </body>
 </html>

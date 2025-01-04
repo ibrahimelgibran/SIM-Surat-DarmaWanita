@@ -1,8 +1,19 @@
  <!-- Masthead-->
  <header class="masthead">
  	<div class="container">
- 		<div class="masthead-subheading">Selamat Datang!</div>
- 		<div class="masthead-heading text-uppercase">DHARMA WANITA</div>
+	 <div class="masthead-subheading" style="margin: 20px; padding: 10px; display: inline-block; overflow: hidden; white-space: nowrap; font-size: 3rem; color:rgb(255, 255, 255); animation: text-appear 3s steps(100) infinite alternate; ">Selamat Datang</div>
+	 <style>
+@keyframes text-appear {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+</style>
+
+	 <div class="masthead-heading text-uppercase">DHARMA WANITA</div>
  		<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="border-radius: 50px;" href="#profil">Lihat Profil</a>
  	</div>
  </header>

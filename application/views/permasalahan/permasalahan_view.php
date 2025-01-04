@@ -26,7 +26,7 @@ body {
 /* Title Styling */
 h1 {
     text-align: center;
-    color: #4CAF50;
+    color: #FFA500;
 }
 
 /* Form Styling */
@@ -47,19 +47,19 @@ form input, form button {
 }
 
 form input:focus {
-    border-color: #4CAF50;
+    border-color: #FFA500;
     outline: none;
 }
 
 form button {
-    background: #4CAF50;
+    background: #FFA500;
     color: #fff;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #45a049;
+    background: #FFA500;
 }
 
 /* Table Styling */
@@ -76,7 +76,7 @@ table th, table td {
 }
 
 table th {
-    background: #4CAF50;
+    background: #FFA500;
     color: #fff;
     font-weight: bold;
 }
@@ -91,13 +91,13 @@ table tr:hover {
 
 table a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #FFA500;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 table a:hover {
-    color: #388E3C;
+    color: #FFA500;
 }
 
     </style>

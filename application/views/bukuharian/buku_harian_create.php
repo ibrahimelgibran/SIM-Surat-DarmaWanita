@@ -58,7 +58,7 @@ textarea {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #FFA500;
     color: white;
     border: none;
     padding: 12px;
@@ -69,11 +69,11 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #FFA500;
 }
 
 button:active {
-    background-color: #004494;
+    background-color: #FFA500;
 }
 
     </style>
@@ -99,6 +99,9 @@ button:active {
 
             <button type="submit">Simpan</button>
         </form>
+    </div>
+    <div class="back-link">
+        <a href="<?= site_url('BukuHarian'); ?>">&larr; Kembali ke Daftar Buku Harian</a>
     </div>
 </body>
 </html>

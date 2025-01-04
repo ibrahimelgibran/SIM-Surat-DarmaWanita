@@ -68,14 +68,14 @@ textarea {
 
 /* Focused Inputs */
 input:focus, select:focus, textarea:focus {
-    border-color: #4CAF50;
+    border-color: #FFA500;
     background-color: #f1f1f1;
     outline: none;
 }
 
 /* Submit Button */
 button {
-    background-color: #4CAF50;
+    background-color: #FFA500;
     color: #fff;
     font-size: 18px;
     padding: 12px 20px;
@@ -87,12 +87,12 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #FFA500;
 }
 
 /* Link Button */
 a {
-    color: #4CAF50;
+    color: #FFA500;
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
@@ -113,7 +113,7 @@ a:hover {
 }
 
 .alert-success {
-    background-color: #4CAF50;
+    background-color: #FFA500;
 }
 
 .alert-danger {
@@ -153,5 +153,8 @@ a:hover {
         <textarea name="keterangan"><?php echo $kegiatan['keterangan']; ?></textarea><br>
         <button type="submit">Simpan</button>
     </form>
+    <div class="back-link">
+        <a href="<?= site_url('Kegiatan'); ?>">&larr; Kembali ke Daftar Buku Kegiatan</a>
+    </div>
 </body>
 </html>
