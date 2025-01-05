@@ -1,3 +1,4 @@
+
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -36,6 +37,10 @@
                                 <option value="administrator">Administrator</option>
                                 <option value="bendahara">Bendahara</option>
                                 <option value="pegawai">Pegawai</option>
+                                <option value="sekretaris">Sekretaris</option>
+                                <option value="ekonomi">Ekonomi</option>
+                                <option value="sosialbudaya">SosialBudaya</option>
+                                <option value="pendidikan">Pendidikan</option>
                             </select>
                         </div>
                         <?= form_error('level', '<div class="text-danger">', '</div>'); ?>

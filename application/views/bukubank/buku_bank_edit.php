@@ -12,7 +12,7 @@
 
         h1 {
             text-align: center;
-            color: #4CAF50;
+            color: #FFA500;
             margin-top: 20px;
         }
 
@@ -35,7 +35,7 @@
         }
 
         form button {
-            background-color: #4CAF50;
+            background-color: #FFA500;
             color: white;
             border: none;
             cursor: pointer;
@@ -43,7 +43,7 @@
         }
 
         form button:hover {
-            background-color: #45a049;
+            background-color: #FFA500;
         }
 
         .back-link {

@@ -12,7 +12,7 @@
 
         h1 {
             text-align: center;
-            color: #4CAF50;
+            color: #FFA500;
             margin-top: 20px;
         }
 
@@ -35,7 +35,7 @@
         }
 
         form button {
-            background-color: #4CAF50;
+            background-color: #FFA500;
             color: white;
             border: none;
             cursor: pointer;
@@ -43,7 +43,7 @@
         }
 
         form button:hover {
-            background-color: #45a049;
+            background-color: #FFA500;
         }
 
         table {
@@ -61,7 +61,7 @@
         }
 
         table th {
-            background-color: #4CAF50;
+            background-color: #FFA500;
             color: white;
         }
 
@@ -91,7 +91,7 @@
         }
 
         .actions a.edit {
-            background-color: #28a745;
+            background-color: #FFA500;
         }
 
         .actions a.delete {
@@ -99,7 +99,7 @@
         }
 
         .actions a.edit:hover {
-            background-color: #218838;
+            background-color: #FFA500;
         }
 
         .actions a.delete:hover {
@@ -132,7 +132,7 @@
         <button type="submit">Simpan</button>
     </form>
 
-    <h2 style="text-align: center; color: #4CAF50;">Data Buku Bank</h2>
+    <h2 style="text-align: center; color: #FFA500;">Data Buku Bank</h2>
     <table>
         <tr>
             <th>Jenis</th>

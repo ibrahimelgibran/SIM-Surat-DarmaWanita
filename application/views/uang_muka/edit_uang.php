@@ -13,7 +13,7 @@
 
         form h3 {
             font-weight: bold;
-            color: #007bff;
+            color: #FFA500;
             text-align: center;
             margin-bottom: 20px;
         }
@@ -35,12 +35,12 @@
         }
 
         .form-control:focus {
-            border-color: #007bff;
+            border-color: #FFA500;
             box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
         }
 
         button {
-            background-color: #007bff;
+            background-color: #FFA500;
             border: none;
             color: white;
             padding: 10px 20px;
@@ -52,7 +52,7 @@
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #FFA500;
             cursor: pointer;
         }
 

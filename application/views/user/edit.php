@@ -38,22 +38,24 @@
                                         <option selected='true' value="administrator">Administrator</option>
                                         <option value="bendahara">Bendahara</option>
                                         <option value="pegawai">Pegawai</option>
+                                        <option value="sekretaris">Sekretaris</option>
+                                        <option value="ekonomi">Ekonomi</option>
+                                        <option value="sosialbudaya">SosialBudaya</option>
+                                        <option value="pendidikan">Pendidikan</option>
                                     <?php else : ?>
                                         <option value="administrator">Administrator</option>
                                         <option value="bendahara">Bendahara</option>
                                         <option selected='true' value="pegawai">Pegawai</option>
+                                        <option value="sekretaris">Sekretaris</option>
+                                        <option value="ekonomi">Ekonomi</option>
+                                        <option value="sosialbudaya">SosialBudaya</option>
+                                        <option value="pendidikan">Pendidikan</option>
                                     <?php endif; ?>
                                 </select>
                             </div>
                             <?= form_error('level', '<div class="text-danger">', '</div>'); ?>
 
                         <?php endif; ?>
-
-
-
-
-
-
 
                         <div class="category form-category">
                             <div class="form-footer text-right">

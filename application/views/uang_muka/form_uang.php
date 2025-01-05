@@ -8,7 +8,7 @@
 }
 
 .table th {
-    background-color: #007bff; /* Warna biru untuk header tabel */
+    background-color: #FFA500; /* Warna biru untuk header tabel */
     color: white; /* Teks putih pada header */
     text-align: center;
 }
@@ -42,28 +42,28 @@ form {
 }
 
 form h4 {
-    color: #007bff; /* Warna teks biru */
+    color: #FFA500; /* Warna teks biru */
 }
 
 /* Tombol */
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #FFA500;
+    border-color: #FFA500;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Biru lebih gelap saat hover */
-    border-color: #0056b3;
+    background-color: #FFA500; /* Biru lebih gelap saat hover */
+    border-color: #FFA500;
 }
 
 .btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
+    background-color: #FFA500;
+    border-color: #FFA500;
 }
 
 .btn-success:hover {
-    background-color: #218838; /* Hijau lebih gelap saat hover */
-    border-color: #1e7e34;
+    background-color: #FFA500; /* Hijau lebih gelap saat hover */
+    border-color: #FFA500;
 }
 
 .btn-danger {
@@ -84,7 +84,7 @@ form h4 {
 
 .alert-success {
     background-color: #d4edda;
-    color: #155724;
+    color: #FFA500;
     border-color: #c3e6cb;
 }
 
@@ -109,6 +109,10 @@ h2, h3 {
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+button {
+    background-color: #FFA500;
 }
 </style>
 
@@ -170,7 +174,7 @@ h2, h3 {
     </div>
 
     <div class="text-center mt-3">
-        <button type="submit" class="btn btn-success">Simpan</button>
+        <button style background-color #FFA500; ="submit" class="btn btn-success">Simpan</button>
     </div>
     <?= form_close(); ?>
 

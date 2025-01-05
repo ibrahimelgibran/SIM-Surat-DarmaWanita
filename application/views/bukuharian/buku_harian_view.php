@@ -63,7 +63,7 @@ textarea {
 input[type="text"]:focus,
 input[type="date"]:focus,
 textarea:focus {
-    border-color: #3498db;
+    border-color: #FFA500;
     outline: none;
     background-color: #ffffff;
 }
@@ -74,7 +74,7 @@ textarea {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #FFA500;
     color: white;
     border: none;
     padding: 14px;
@@ -86,11 +86,11 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #FFA500;
 }
 
 button:active {
-    background-color: #1c5d8a;
+    background-color: #FFA500;
 }
 
 /* Table for displaying data */
@@ -115,7 +115,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #3498db;
+    background-color: #FFA500;
     color: white;
     font-weight: 600;
 }

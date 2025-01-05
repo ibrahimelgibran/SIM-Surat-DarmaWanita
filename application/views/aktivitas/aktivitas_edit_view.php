@@ -35,7 +35,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #007BFF;
+    background-color: #FFA500;
     color: white;
     text-transform: uppercase;
 }
@@ -50,7 +50,7 @@ table tr:hover {
 
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: #FFA500;
 }
 
 a:hover {
@@ -86,7 +86,7 @@ form input:focus, form textarea:focus {
 }
 
 form button {
-    background-color: #007BFF;
+    background-color: #FFA500;
     color: white;
     border: none;
     cursor: pointer;
@@ -95,7 +95,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #FFA500;
 }
 
 /* Responsive Styles */
@@ -128,5 +128,8 @@ form button:hover {
 
         <button type="submit">Update Data</button>
     </form>
+    <div class="back-link">
+        <a href="<?= site_url('Aktivitas'); ?>">&larr; Kembali ke Daftar Buku Aktivitas</a>
+    </div>
 </body>
 </html>
