@@ -1,3 +1,4 @@
+
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -34,14 +35,12 @@
                             <select class="selectpicker" name="level" id="level" data-style="btn btn-primary btn-round" title="Single Select" data-size="7">
                                 <option disabled selected>Pilih Hak Akses</option>
                                 <option value="administrator">Administrator</option>
+                                <option value="bendahara">Bendahara</option>
+                                <option value="pegawai">Pegawai</option>
                                 <option value="sekretaris">Sekretaris</option>
                                 <option value="ekonomi">Ekonomi</option>
                                 <option value="sosialbudaya">SosialBudaya</option>
                                 <option value="pendidikan">Pendidikan</option>
-
-
-                                <!-- <option value="iegcode">iegcode</option> -->
-                                <option value="pegawai">Pegawai</option>
                             </select>
                         </div>
                         <?= form_error('level', '<div class="text-danger">', '</div>'); ?>

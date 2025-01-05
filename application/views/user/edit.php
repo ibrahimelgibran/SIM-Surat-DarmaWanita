@@ -36,20 +36,20 @@
                                     <option disabled selected>Pilih Hak Akses</option>
                                     <?php if ($user['level'] == 'administrator') : ?>
                                         <option selected='true' value="administrator">Administrator</option>
-                                        <option selected='true' value="sekretaris">Sekretaris</option>
-                                        <option selected='true' value="ekonomi">Ekonomi</option>
-                                        <option selected='true' value="sosialbudaya">SosialBudaya</option>
-                                        <option selected='true' value="pendidikan">Pendidikan</option>
-                                        <!-- <option selected='true' value="iegcode">iegcode</option> -->
+                                        <option value="bendahara">Bendahara</option>
                                         <option value="pegawai">Pegawai</option>
-                                    <?php else : ?>
-                                        <option value="administrator">Administrator</option>
                                         <option value="sekretaris">Sekretaris</option>
                                         <option value="ekonomi">Ekonomi</option>
                                         <option value="sosialbudaya">SosialBudaya</option>
                                         <option value="pendidikan">Pendidikan</option>
-                                        <!-- <option value="iegcode">iegcode</option> -->
+                                    <?php else : ?>
+                                        <option value="administrator">Administrator</option>
+                                        <option value="bendahara">Bendahara</option>
                                         <option selected='true' value="pegawai">Pegawai</option>
+                                        <option value="sekretaris">Sekretaris</option>
+                                        <option value="ekonomi">Ekonomi</option>
+                                        <option value="sosialbudaya">SosialBudaya</option>
+                                        <option value="pendidikan">Pendidikan</option>
                                     <?php endif; ?>
                                 </select>
                             </div>
