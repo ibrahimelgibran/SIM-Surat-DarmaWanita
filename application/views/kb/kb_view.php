@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Register Pelayanan KB</title>
     <style>
-        /* Global Styles */
+    /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    margin-top: 20px;
+    margin: 33px;
+    margin-top: 30px;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
@@ -20,6 +20,10 @@ body {
     margin: 20px auto;
 }
 
+h1 {
+    text-align: center;
+    color: #FFA500;
+}
 /* Table Styles */
 table {
     width: 100%;
@@ -81,7 +85,7 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #FFA500;
+    border-color: #007BFF;
     outline: none;
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
 }
@@ -106,16 +110,24 @@ form button:hover {
         padding: 8px;
     }
 
+    h1 {
+    
+    color: #FFA500;
+    margin-top: 100px;
+}
+
     form input, form textarea, form button {
         font-size: 14px;
         padding: 8px;
     }
 }
+
     </style>
 </head>
 <body>
     <h1>Register Pelayanan KB</h1>
     <a href="<?php echo site_url('PelayananKB/tambah'); ?>">Tambah Data</a>
+    <div style="overflow-x:auto;">
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
@@ -149,5 +161,6 @@ form button:hover {
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </body>
 </html>

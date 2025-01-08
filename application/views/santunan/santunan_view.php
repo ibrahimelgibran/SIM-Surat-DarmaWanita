@@ -6,7 +6,8 @@
         /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 33px;
+    margin-top: 30px;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
@@ -18,6 +19,10 @@ body {
     margin: 20px auto;
 }
 
+h1 {
+    text-align: center;
+    color: #FFA500;
+}
 /* Table Styles */
 table {
     width: 100%;
@@ -53,7 +58,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Form Styles */
@@ -79,7 +84,7 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #FFA500;
+    border-color: #007BFF;
     outline: none;
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
 }
@@ -104,6 +109,12 @@ form button:hover {
         padding: 8px;
     }
 
+    h1 {
+    
+    color: #FFA500;
+    margin-top: 100px;
+}
+
     form input, form textarea, form button {
         font-size: 14px;
         padding: 8px;
@@ -116,6 +127,7 @@ form button:hover {
 <div class="container">
     <h1>Data Buku Santunan Pendidikan</h1>
     <a href="<?= base_url('santunan/create') ?>">Tambah Data</a>
+    <div style="overflow-x:auto;">
     <table>
         <thead>
             <tr>
@@ -147,6 +159,7 @@ form button:hover {
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </div>
 </body>
 </html>

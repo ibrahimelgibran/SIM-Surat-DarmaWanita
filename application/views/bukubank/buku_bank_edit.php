@@ -3,63 +3,123 @@
 <head>
     <title>Edit Buku Bank</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
+          body {
+    font-family: Arial, sans-serif;
+    margin: 33px;
+    margin-top: 30px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-        h1 {
-            text-align: center;
-            color: #FFA500;
-            margin-top: 20px;
-        }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
 
-        form {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            max-width: 600px;
-            margin: 20px auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+h1 {
+    text-align: center;
+    color: #FFA500;
+}
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        form input, form select, form button {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
 
-        form button {
-            background-color: #FFA500;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
+table th {
+    background-color: #FFA500;
+    color: white;
+    text-transform: uppercase;
+}
 
-        form button:hover {
-            background-color: #FFA500;
-        }
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-        .back-link {
-            text-align: center;
-            margin-top: 10px;
-        }
+table tr:hover {
+    background-color: #e9f5ff;
+}
 
-        .back-link a {
-            text-decoration: none;
-            color: #007BFF;
-            font-size: 14px;
-        }
+a {
+    text-decoration: none;
+    color: #FFA500;
+}
 
-        .back-link a:hover {
-            text-decoration: underline;
-        }
+a:hover {
+    text-decoration: none;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+form button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #FFA500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+    
+    color: #FFA500;
+    margin-top: 100px;
+}
+
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
     </style>
 </head>
 <body>

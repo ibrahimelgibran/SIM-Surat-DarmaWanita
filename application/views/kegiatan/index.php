@@ -3,113 +3,131 @@
 <head>
     <title>Data Kegiatan</title>
     <style>
-
+/* Global Styles */
 body {
-    margin: 70px;
-    margin-top: 20px;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    margin: 33px;
+    margin-top: 30px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .container {
-    width: 50%;
+    width: 90%;
     max-width: 1200px;
-    margin: 50px auto;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
+    margin: 20px auto;
 }
 
 h1 {
     text-align: center;
     color: #FFA500;
-    margin-bottom: 20px;
-    font-size: 28px;
 }
-
-.table-container {
-    overflow-x: auto;
-    margin-top: 20px;
-}
-
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
-    font-size: 16px;
-    text-align: left;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
-    padding: 15px;
+    padding: 12px;
+    text-align: left;
     border: 1px solid #ddd;
 }
 
 table th {
     background-color: #FFA500;
-    color: #ffffff;
+    color: white;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f2f2f2;
 }
 
 table tr:hover {
-    background-color: #f1f1f1;
-}
-
-button {
-    padding: 10px 15px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #FFA500;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-right: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #FFA500;
-    text-decoration: none;
-}
-
-button.delete {
-    background-color: #dc3545;
-}
-
-button.delete:hover {
-    background-color: #c82333;
-}
-
-.actions {
-    display: flex;
-    justify-content: center;
+    background-color: #e9f5ff;
 }
 
 a {
-    display: inline-block;
-    color: #FFA500;
     text-decoration: none;
-    font-size: 14px;
-    margin-top: 20px;
+    color: #FFA500;
 }
 
 a:hover {
     text-decoration: none;
 }
 
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+form button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #FFA500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+    
+    color: #FFA500;
+    margin-top: 100px;
+}
+
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
     </style>
 </head>
 <body>
+
     <h1>Data Kegiatan</h1>
     <a href="<?php echo site_url('kegiatan/add'); ?>">Tambah Kegiatan</a>
+    <div style="overflow-x:auto;">
     <table border="1">
         <thead>
             <tr>
@@ -139,5 +157,6 @@ a:hover {
             <?php endforeach; ?>
         </tbody>
     </table>
+</div>
 </body>
 </html>

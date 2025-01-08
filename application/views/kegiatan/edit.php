@@ -3,135 +3,121 @@
 <head>
     <title>Edit Kegiatan</title>
     <style>
-  /* Global Styles */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f6f9;
-    margin: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    margin: 33px;
+    margin-top: 30px;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .container {
-    width: 50%;
-    max-width: 1000px;
-    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
-/* Header */
-h1, h2 {
+h1 {
     text-align: center;
-    font-size: 28px;
-    color: #333;
-}
-
-/* Form Container */
-.form-container {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin: 0;
-}
-
-.form-group {
-    margin-bottom: 5px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    color: #555;
-   
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #333;
-    background-color: #f9f9f9;
-    box-sizing: border-box;
-}
-
-input[type="date"] {
-    padding: 10px 14px;
-}
-
-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-/* Focused Inputs */
-input:focus, select:focus, textarea:focus {
-    border-color: #FFA500;
-    background-color: #f1f1f1;
-    outline: none;
-}
-
-/* Submit Button */
-button {
-    background-color: #FFA500;
-    color: #fff;
-    font-size: 18px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #FFA500;
-}
-
-/* Link Button */
-a {
     color: #FFA500;
+}
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #FFA500;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e9f5ff;
+}
+
+a {
     text-decoration: none;
-    font-size: 16px;
-    display: inline-block;
-    margin-top: 15px;
+    color: #FFA500;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-/* Error and Success Messages */
-.alert {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    color: #fff;
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
-.alert-success {
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+form button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form button:hover {
     background-color: #FFA500;
 }
 
-.alert-danger {
-    background-color: #f44336;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+    
+    color: #FFA500;
+    margin-top: 100px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .form-container {
-        padding: 20px;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    button {
-        font-size: 16px;
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 8px;
     }
 }
 

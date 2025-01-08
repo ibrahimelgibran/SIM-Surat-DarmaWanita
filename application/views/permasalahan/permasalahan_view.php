@@ -3,101 +3,122 @@
 <head>
     <title>Permasalahan</title>
     <style>
-        /* Reset Styles */
+        /* Global Styles */
 body {
-    margin: 100px;
-    margin-top: 30px;
     font-family: Arial, sans-serif;
+    margin: 33px;
+    margin-top: 30px;
+    padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Container Styling */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-/* Title Styling */
 h1 {
     text-align: center;
     color: #FFA500;
 }
-
-/* Form Styling */
-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-form input, form button {
-    flex: 1 1 calc(25% - 20px);
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form input:focus {
-    border-color: #FFA500;
-    outline: none;
-}
-
-form button {
-    background: #FFA500;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-form button:hover {
-    background: #FFA500;
-}
-
-/* Table Styling */
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
-    padding: 10px;
-    text-align: center;
+    padding: 12px;
+    text-align: left;
     border: 1px solid #ddd;
 }
 
 table th {
-    background: #FFA500;
-    color: #fff;
-    font-weight: bold;
+    background-color: #FFA500;
+    color: white;
+    text-transform: uppercase;
 }
 
 table tr:nth-child(even) {
-    background: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 table tr:hover {
-    background: #e9f5e9;
+    background-color: #e9f5ff;
 }
 
-table a {
+a {
     text-decoration: none;
     color: #FFA500;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-table a:hover {
+a:hover {
+    text-decoration: none;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+form button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #FFA500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+    
     color: #FFA500;
+    margin-top: 100px;
+}
+
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
 
     </style>
@@ -111,6 +132,7 @@ table a:hover {
         <input type="text" name="keterangan" placeholder="Keterangan" required>
         <button type="submit">Tambah</button>
     </form>
+    <div style="overflow-x:auto;">
     <table border="1">
         <tr>
             <th>No</th>
@@ -134,5 +156,6 @@ table a:hover {
         </tr>
         <?php endforeach; ?>
     </table>
+    </div>
 </body>
 </html>
