@@ -1,87 +1,125 @@
 <div class="container mt-5">
     <style>
-        /* Styling Form */
-        form {
-            border: 1px solid #ced4da;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
+       /* Tabel */
+.table {
+    border: 1px solid #dee2e6; /* Border tabel */
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    width: 100%;
+}
 
-        form h3 {
-            font-weight: bold;
-            color: #FFA500;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+.table th {
+    background-color: #FFA500; /* Warna oranye untuk header tabel */
+    color: white; /* Teks putih pada header */
+    text-align: center;
+}
 
-        .form-group label {
-            font-weight: bold;
-            color: #495057;
-            margin-bottom: 5px;
-            display: inline-block;
-        }
+.table td, .table th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6; /* Garis antar sel */
+    word-wrap: break-word; /* Membungkus teks yang panjang */
+}
 
-        .form-control {
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-            height: 45px;
-            padding: 10px;
-            font-size: 14px;
-            color: #495057;
-        }
+.table tbody tr:nth-child(odd) {
+    background-color: #e9ecef; /* Warna abu-abu terang untuk baris ganjil */
+}
 
-        .form-control:focus {
-            border-color: #FFA500;
-            box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
-        }
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Warna putih untuk baris genap */
+}
 
-        button {
-            background-color: #FFA500;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            width: 100%;
-        }
+.table-hover tbody tr:hover {
+    background-color: #d4edda; /* Warna hijau terang saat kursor hover */
+    transition: background-color 0.3s ease;
+}
 
-        button:hover {
-            background-color: #FFA500;
-            cursor: pointer;
-        }
+/* Form */
+form {
+    border: 1px solid #ced4da; /* Border abu-abu */
+    background-color: #ffffff; /* Latar putih */
+    padding: 20px;
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
 
-        /* Spasi antar elemen */
-        .form-group {
-            margin-bottom: 15px;
-        }
+form h4 {
+    color: #FFA500; /* Warna teks oranye */
+}
 
-        /* Container styling */
-        .container {
-            padding: 15px;
-        }
+/* Tombol */
+button {
+    background-color: #FFA500;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        /* Responsive styling */
-        @media (max-width: 768px) {
-            form {
-                padding: 15px;
-            }
+button:hover {
+    background-color: #e69500;
+}
 
-            .form-control {
-                height: 40px;
-                font-size: 13px;
-            }
+.btn-danger:hover {
+    background-color: #bd2130; /* Merah lebih gelap saat hover */
+}
 
-            button {
-                font-size: 14px;
-                padding: 8px 15px;
-            }
-        }
+/* Notifikasi Flash */
+.alert {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Teks */
+.text-center {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-weight: bold;
+    color: #343a40; /* Warna teks hitam pekat */
+}
+
+/* Responsive */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+    form {
+        padding: 10px;
+    }
+    button {
+        padding: 8px 10px;
+    }
+    h2, h3 {
+        font-size: 16px;
+    }
+    .alert {
+        font-size: 12px;
+    }
+}
+
     </style>
 
     <form action="<?= site_url('UangMuka/update'); ?>" method="POST">

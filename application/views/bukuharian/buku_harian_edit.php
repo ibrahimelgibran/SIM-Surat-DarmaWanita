@@ -5,74 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= base_url('assets/css/buku_harian_form.css') ?>">
     <title>Edit Data Buku Harian</title>
-    <style> body {
+    <style>/* Global Styles */
+body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
+    margin: 33px;
+    margin-top: 30px;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 h1 {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    color: #FFA500;
+}
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #FFA500;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e9f5ff;
+}
+
+a {
+    text-decoration: none;
+    color: #FFA500;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Form Styles */
 form {
-    display: flex;
-    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-label {
+form label {
+    display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #555;
 }
 
-input[type="text"],
-input[type="date"],
-textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+form input, form textarea, form button {
     width: 100%;
-    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-textarea {
-    resize: vertical;
-    min-height: 100px;
+form input:focus, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
 }
 
-button {
+form button {
     background-color: #FFA500;
     color: white;
     border: none;
-    padding: 12px;
-    border-radius: 4px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-button:hover {
-    background-color:#FFA500;
-}
-
-button:active {
+form button:hover {
     background-color: #FFA500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+    
+    color: #FFA500;
+    margin-top: 100px;
+}
+
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
 
 </style>

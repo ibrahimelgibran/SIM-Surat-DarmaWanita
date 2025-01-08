@@ -5,10 +5,11 @@
     border: 1px solid #dee2e6; /* Border tabel */
     border-collapse: collapse;
     background-color: #f9f9f9;
+    width: 100%;
 }
 
 .table th {
-    background-color: #FFA500; /* Warna biru untuk header tabel */
+    background-color: #FFA500; /* Warna oranye untuk header tabel */
     color: white; /* Teks putih pada header */
     text-align: center;
 }
@@ -17,6 +18,7 @@
     padding: 10px;
     text-align: center;
     border: 1px solid #dee2e6; /* Garis antar sel */
+    word-wrap: break-word; /* Membungkus teks yang panjang */
 }
 
 .table tbody tr:nth-child(odd) {
@@ -42,49 +44,37 @@ form {
 }
 
 form h4 {
-    color: #FFA500; /* Warna teks biru */
+    color: #FFA500; /* Warna teks oranye */
 }
 
 /* Tombol */
-.btn-primary {
+button {
     background-color: #FFA500;
-    border-color: #FFA500;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn-primary:hover {
-    background-color: #FFA500; /* Biru lebih gelap saat hover */
-    border-color: #FFA500;
-}
-
-.btn-success {
-    background-color: #FFA500;
-    border-color: #FFA500;
-}
-
-.btn-success:hover {
-    background-color: #FFA500; /* Hijau lebih gelap saat hover */
-    border-color: #FFA500;
-}
-
-.btn-danger {
-    background-color: #dc3545;
-    border-color: #dc3545;
+button:hover {
+    background-color: #e69500;
 }
 
 .btn-danger:hover {
     background-color: #bd2130; /* Merah lebih gelap saat hover */
-    border-color: #b21f2d;
 }
 
 /* Notifikasi Flash */
 .alert {
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .alert-success {
     background-color: #d4edda;
-    color: #FFA500;
+    color: #155724;
     border-color: #c3e6cb;
 }
 
@@ -105,15 +95,32 @@ h2, h3 {
     color: #343a40; /* Warna teks hitam pekat */
 }
 
-/* Responsive Table */
+/* Responsive */
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-button {
-    background-color: #FFA500;
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+    form {
+        padding: 10px;
+    }
+    button {
+        padding: 8px 10px;
+    }
+    h2, h3 {
+        font-size: 16px;
+        margin-top: 80px;
+    }
+    .alert {
+        font-size: 12px;
+    }
 }
+
 </style>
 
     <!-- Notifikasi Flash Data -->
